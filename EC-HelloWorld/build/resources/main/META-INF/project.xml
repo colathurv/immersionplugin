@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><exportedData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" buildLabel="build_3.7_34336_OPT_2010.07.26_15:26:49" buildVersion="3.7.0.34336" version="42" xsi:noNamespaceSchemaLocation="commander.xsd">
+    <exportPath>/projects/EC-HelloWorld-1.0.0.0</exportPath>
+    <project>
+        <projectName>EC-HelloWorld-1.0.0.0</projectName>
+        <description>A typical HelloWorld</description>
+        <propertySheet>
+            <property>
+                <propertyName>ui_forms</propertyName>
+                <description>Property sheet to hold XML specification for forms for configurations</description>
+                <propertySheet>
+                    <property>
+                        <propertyName>CreateConfigForm</propertyName>
+                        <expandable>1</expandable>
+                        <value>&lt;!--&#13;
+&#13;
+     Copyright 2015 Electric Cloud, Inc.&#13;
+&#13;
+     Licensed under the Apache License, Version 2.0 (the "License");&#13;
+     you may not use this file except in compliance with the License.&#13;
+     You may obtain a copy of the License at&#13;
+&#13;
+         http://www.apache.org/licenses/LICENSE-2.0&#13;
+&#13;
+     Unless required by applicable law or agreed to in writing, software&#13;
+     distributed under the License is distributed on an "AS IS" BASIS,&#13;
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#13;
+     See the License for the specific language governing permissions and&#13;
+     limitations under the License.&#13;
+&#13;
+--&gt;&#13;
+&lt;editor&gt;&#13;
+    &lt;formElement&gt;&#13;
+        &lt;type&gt;entry&lt;/type&gt;&#13;
+        &lt;label&gt;Configuration Name:&lt;/label&gt;&#13;
+        &lt;property&gt;config&lt;/property&gt;&#13;
+        &lt;value&gt;&lt;/value&gt;&#13;
+        &lt;required&gt;1&lt;/required&gt;&#13;
+        &lt;documentation&gt;Provide a unique name for the configuration, keeping in mind that you may need to create additional configurations over time.&lt;/documentation&gt;&#13;
+    &lt;/formElement&gt;&#13;
+    &lt;formElement&gt;&#13;
+        &lt;type&gt;entry&lt;/type&gt;&#13;
+        &lt;label&gt;Description:&lt;/label&gt;&#13;
+        &lt;property&gt;desc&lt;/property&gt;&#13;
+        &lt;value&gt;HelloWorld configuration&lt;/value&gt;&#13;
+        &lt;documentation&gt;Provide a simple description for this configuration.&lt;/documentation&gt;&#13;
+    &lt;/formElement&gt;&#13;
+    &lt;formElement&gt;&#13;
+        &lt;type&gt;select&lt;/type&gt;&#13;
+        &lt;label&gt;Level of formality:&lt;/label&gt;&#13;
+        &lt;property&gt;formalLevel&lt;/property&gt;&#13;
+        &lt;value&gt;Informal&lt;/value&gt;&#13;
+        &lt;documentation&gt;Level of formality to use&lt;/documentation&gt;&#13;
+        &lt;required&gt;1&lt;/required&gt;&#13;
+        &lt;option&gt;&#13;
+            &lt;name&gt;Surfer&lt;/name&gt;&#13;
+            &lt;value&gt;Surfer&lt;/value&gt;&#13;
+        &lt;/option&gt;&#13;
+        &lt;option&gt;&#13;
+            &lt;name&gt;Informal&lt;/name&gt;&#13;
+            &lt;value&gt;Informal&lt;/value&gt;&#13;
+        &lt;/option&gt;&#13;
+        &lt;option&gt;&#13;
+            &lt;name&gt;Almost Formal&lt;/name&gt;&#13;
+            &lt;value&gt;Almost Formal&lt;/value&gt;&#13;
+        &lt;/option&gt;&#13;
+    &lt;/formElement&gt;&#13;
+&lt;/editor&gt;&#13;
+</value>
+                    </property>
+                    <property>
+                        <propertyName>EditConfigForm</propertyName>
+                        <description/>
+                        <expandable>0</expandable>
+                        <value>&lt;!--&#13;
+&#13;
+     Copyright 2015 Electric Cloud, Inc.&#13;
+&#13;
+     Licensed under the Apache License, Version 2.0 (the "License");&#13;
+     you may not use this file except in compliance with the License.&#13;
+     You may obtain a copy of the License at&#13;
+&#13;
+         http://www.apache.org/licenses/LICENSE-2.0&#13;
+&#13;
+     Unless required by applicable law or agreed to in writing, software&#13;
+     distributed under the License is distributed on an "AS IS" BASIS,&#13;
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#13;
+     See the License for the specific language governing permissions and&#13;
+     limitations under the License.&#13;
+&#13;
+--&gt;&#13;
+&lt;editor&gt;&#13;
+    &lt;formElement&gt;&#13;
+        &lt;type&gt;entry&lt;/type&gt;&#13;
+        &lt;label&gt;Description:&lt;/label&gt;&#13;
+        &lt;property&gt;desc&lt;/property&gt;&#13;
+        &lt;documentation&gt;Provide a simple description for this configuration.&lt;/documentation&gt;&#13;
+    &lt;/formElement&gt;&#13;
+    &lt;formElement&gt;&#13;
+        &lt;type&gt;select&lt;/type&gt;&#13;
+        &lt;label&gt;Level of formality:&lt;/label&gt;&#13;
+        &lt;property&gt;formalLevel&lt;/property&gt;&#13;
+        &lt;documentation&gt;Level of formality to use&lt;/documentation&gt;&#13;
+        &lt;required&gt;1&lt;/required&gt;&#13;
+        &lt;option&gt;&#13;
+            &lt;name&gt;Surfer&lt;/name&gt;&#13;
+            &lt;value&gt;Surfer&lt;/value&gt;&#13;
+        &lt;/option&gt;&#13;
+        &lt;option&gt;&#13;
+            &lt;name&gt;Informal&lt;/name&gt;&#13;
+            &lt;value&gt;Informal&lt;/value&gt;&#13;
+        &lt;/option&gt;&#13;
+        &lt;option&gt;&#13;
+            &lt;name&gt;Almost Formal&lt;/name&gt;&#13;
+            &lt;value&gt;Almost Formal&lt;/value&gt;&#13;
+        &lt;/option&gt;&#13;
+    &lt;/formElement&gt;&#13;
+&lt;/editor&gt;&#13;
+</value>
+                    </property>
+                </propertySheet>
+            </property>
+            <property>
+                <propertyName>ec_setup</propertyName>
+                <expandable>0</expandable>
+                <value>#&#13;
+#  Copyright 2015 Electric Cloud, Inc.&#13;
+#&#13;
+#  Licensed under the Apache License, Version 2.0 (the "License");&#13;
+#  you may not use this file except in compliance with the License.&#13;
+#  You may obtain a copy of the License at&#13;
+#&#13;
+#      http://www.apache.org/licenses/LICENSE-2.0&#13;
+#&#13;
+#  Unless required by applicable law or agreed to in writing, software&#13;
+#  distributed under the License is distributed on an "AS IS" BASIS,&#13;
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#13;
+#  See the License for the specific language governing permissions and&#13;
+#  limitations under the License.&#13;
+#&#13;
+&#13;
+#&#13;
+# The plugin is being promoted, create a property reference in the server's property sheet&#13;
+# Data that drives the create step picker registration for this plugin.&#13;
+#&#13;
+no warnings qw/redefine/;&#13;
+use XML::Simple;&#13;
+use ElectricCommander::Util;&#13;
+&#13;
+my %sayHello = (&#13;
+    label       =&gt; "HelloWorld - Say Hello",&#13;
+    procedure   =&gt; "SayHello",&#13;
+    description =&gt; "Say Hello to the world",&#13;
+    category    =&gt; "Example"&#13;
+);&#13;
+&#13;
+$batch-&gt;deleteProperty("/server/ec_customEditors/pickerStep/HelloWorld - Say Hello");&#13;
+&#13;
+@::createStepPickerSteps = (\%sayHello);&#13;
+&#13;
+my $pluginName = "EC-HelloWorld-1.0.0.0";&#13;
+my $pluginKey  = "EC-HelloWorld";&#13;
+if ($promoteAction ne '') {&#13;
+    my @objTypes = ('projects', 'resources', 'workspaces');&#13;
+    my $query    = $commander-&gt;newBatch();&#13;
+    my @reqs     = map { $query-&gt;getAclEntry('user', "project: $pluginName", { systemObjectName =&gt; $_ }) } @objTypes;&#13;
+    push @reqs, $query-&gt;getProperty('/server/ec_hooks/promote');&#13;
+    $query-&gt;submit();&#13;
+&#13;
+    foreach my $type (@objTypes) {&#13;
+        if ($query-&gt;findvalue(shift @reqs, 'code') ne 'NoSuchAclEntry') {&#13;
+            $batch-&gt;deleteAclEntry('user', "project: $pluginName", { systemObjectName =&gt; $type });&#13;
+        }&#13;
+    }&#13;
+&#13;
+    if ($promoteAction eq "promote") {&#13;
+        foreach my $type (@objTypes) {&#13;
+            $batch-&gt;createAclEntry(&#13;
+                                   'user',&#13;
+                                   "project: $pluginName",&#13;
+                                   {&#13;
+                                      systemObjectName           =&gt; $type,&#13;
+                                      readPrivilege              =&gt; 'allow',&#13;
+                                      modifyPrivilege            =&gt; 'allow',&#13;
+                                      executePrivilege           =&gt; 'allow',&#13;
+                                      changePermissionsPrivilege =&gt; 'allow'&#13;
+                                   }&#13;
+                                  );&#13;
+        }&#13;
+    }&#13;
+}&#13;
+&#13;
+#&#13;
+# The plugin is being promoted, copy the plugin configurations from the&#13;
+# earlier version to this instance of the plugin.&#13;
+#&#13;
+if ($upgradeAction eq "upgrade") {&#13;
+    my $query   = $commander-&gt;newBatch();&#13;
+    my $newcfg  = $query-&gt;getProperty("/plugins/$pluginName/project/helloworld_cfgs");&#13;
+&#13;
+    my $old_cfgs_path = "/plugins/$otherPluginName/project/helloworld_cfgs";&#13;
+    my $new_cfgs_path = "/plugins/$pluginName/project/helloworld_cfgs";&#13;
+    my $oldcfgs = $query-&gt;getProperty($old_cfgs_path);&#13;
+    my $creds   = $query-&gt;getCredentials("\$[/plugins/$otherPluginName]");&#13;
+&#13;
+    local $self-&gt;{abortOnError} = 0;&#13;
+    $query-&gt;submit();&#13;
+&#13;
+    # if new plugin does not already have cfgs&#13;
+    if ($query-&gt;findvalue($newcfg, "code") eq "NoSuchProperty") {&#13;
+&#13;
+        # if old cfg has some cfgs to copy&#13;
+        if ($query-&gt;findvalue($oldcfgs, "code") ne "NoSuchProperty") {&#13;
+            $batch-&gt;clone(&#13;
+                          {&#13;
+                            path      =&gt; "/plugins/$otherPluginName/project/helloworld_cfgs",&#13;
+                            cloneName =&gt; "/plugins/$pluginName/project/helloworld_cfgs"&#13;
+                          }&#13;
+                         );&#13;
+        }&#13;
+    }&#13;
+}&#13;
+&#13;
+&#13;
+</value>
+            </property>
+            <property>
+                <propertyName>ec_visibility</propertyName>
+                <description/>
+                <expandable>1</expandable>
+                <value>pickListOnly</value>
+            </property>
+        </propertySheet>
+        <procedure>
+            <procedureName>CreateConfiguration</procedureName>
+            <description>Create a new EC-HelloWorld configuration.</description>
+            <jobNameTemplate>EC-HelloWorld-CreateConfiguration-$[jobId]</jobNameTemplate>
+            <resourceName/>
+            <workspaceName/>
+            <propertySheet>
+                <property>
+                    <propertyName>ec_customEditorData</propertyName>
+                    <propertySheet>
+                        <property>
+                            <propertyName>parameters</propertyName>
+                            <propertySheet>
+                                <property>
+                                    <propertyName>config</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>desc</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>formalLevel</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+
+                            </propertySheet>
+                        </property>
+                    </propertySheet>
+                </property>
+                <property>
+                    <propertyName>ec_parameterForm</propertyName>
+                    <description/>
+                    <expandable>0</expandable>
+                    <value>&lt;!--&#13;
+&#13;
+     Copyright 2015 Electric Cloud, Inc.&#13;
+&#13;
+     Licensed under the Apache License, Version 2.0 (the "License");&#13;
+     you may not use this file except in compliance with the License.&#13;
+     You may obtain a copy of the License at&#13;
+&#13;
+         http://www.apache.org/licenses/LICENSE-2.0&#13;
+&#13;
+     Unless required by applicable law or agreed to in writing, software&#13;
+     distributed under the License is distributed on an "AS IS" BASIS,&#13;
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#13;
+     See the License for the specific language governing permissions and&#13;
+     limitations under the License.&#13;
+&#13;
+--&gt;&#13;
+&lt;editor&gt;&#13;
+    &lt;formElement&gt;&#13;
+        &lt;type&gt;entry&lt;/type&gt;&#13;
+        &lt;label&gt;Configuration Name:&lt;/label&gt;&#13;
+        &lt;property&gt;config&lt;/property&gt;&#13;
+        &lt;value&gt;&lt;/value&gt;&#13;
+        &lt;required&gt;1&lt;/required&gt;&#13;
+        &lt;documentation&gt;Provide a unique name for the configuration, keeping in mind that you may need to create additional configurations over time.&lt;/documentation&gt;&#13;
+    &lt;/formElement&gt;&#13;
+    &lt;formElement&gt;&#13;
+        &lt;type&gt;entry&lt;/type&gt;&#13;
+        &lt;label&gt;Description:&lt;/label&gt;&#13;
+        &lt;property&gt;desc&lt;/property&gt;&#13;
+        &lt;value&gt;HelloWorld configuration&lt;/value&gt;&#13;
+        &lt;documentation&gt;Provide a simple description for this configuration.&lt;/documentation&gt;&#13;
+    &lt;/formElement&gt;&#13;
+    &lt;formElement&gt;&#13;
+        &lt;type&gt;select&lt;/type&gt;&#13;
+        &lt;label&gt;Level of formality:&lt;/label&gt;&#13;
+        &lt;property&gt;formalLevel&lt;/property&gt;&#13;
+        &lt;value&gt;Informal&lt;/value&gt;&#13;
+        &lt;documentation&gt;Level of formality to use&lt;/documentation&gt;&#13;
+        &lt;required&gt;1&lt;/required&gt;&#13;
+        &lt;option&gt;&#13;
+            &lt;name&gt;Surfer&lt;/name&gt;&#13;
+            &lt;value&gt;Surfer&lt;/value&gt;&#13;
+        &lt;/option&gt;&#13;
+        &lt;option&gt;&#13;
+            &lt;name&gt;Informal&lt;/name&gt;&#13;
+            &lt;value&gt;Informal&lt;/value&gt;&#13;
+        &lt;/option&gt;&#13;
+        &lt;option&gt;&#13;
+            &lt;name&gt;Almost Formal&lt;/name&gt;&#13;
+            &lt;value&gt;Almost Formal&lt;/value&gt;&#13;
+        &lt;/option&gt;&#13;
+    &lt;/formElement&gt;&#13;
+&lt;/editor&gt;&#13;
+</value>
+                </property>
+
+            </propertySheet>
+            <formalParameter>
+                <formalParameterName>config</formalParameterName>
+                <defaultValue/>
+                <description>the name of the configuration to use</description>
+                <expansionDeferred>0</expansionDeferred>
+                <required>1</required>
+                <type>entry</type>
+            </formalParameter>
+            <formalParameter>
+                <formalParameterName>desc</formalParameterName>
+                <expansionDeferred>0</expansionDeferred>
+                <required>0</required>
+                <type>entry</type>
+            </formalParameter>
+            <formalParameter>
+                <formalParameterName>formalLevel</formalParameterName>
+                <defaultValue/>
+                <description>Level of formality</description>
+                <expansionDeferred>0</expansionDeferred>
+                <required>1</required>
+                <type>select</type>
+            </formalParameter>
+
+            <step>
+                <stepName>CreateConfiguration</stepName>
+                <alwaysRun>0</alwaysRun>
+                <broadcast>0</broadcast>
+                <command>#&#13;
+#  Copyright 2015 Electric Cloud, Inc.&#13;
+#&#13;
+#  Licensed under the Apache License, Version 2.0 (the "License");&#13;
+#  you may not use this file except in compliance with the License.&#13;
+#  You may obtain a copy of the License at&#13;
+#&#13;
+#      http://www.apache.org/licenses/LICENSE-2.0&#13;
+#&#13;
+#  Unless required by applicable law or agreed to in writing, software&#13;
+#  distributed under the License is distributed on an "AS IS" BASIS,&#13;
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#13;
+#  See the License for the specific language governing permissions and&#13;
+#  limitations under the License.&#13;
+#&#13;
+&#13;
+#########################&#13;
+## createcfg.pl&#13;
+#########################&#13;
+&#13;
+use ElectricCommander;&#13;
+use ElectricCommander::PropDB;&#13;
+&#13;
+use constant {&#13;
+    SUCCESS =&gt; 0,&#13;
+    ERROR   =&gt; 1,&#13;
+};&#13;
+&#13;
+my $opts;&#13;
+&#13;
+my $PLUGIN_NAME = "EC-HelloWorld";&#13;
+&#13;
+if ( !defined $PLUGIN_NAME ) {&#13;
+    print "PLUGIN_NAME must be defined\n";&#13;
+    exit ERROR;&#13;
+}&#13;
+&#13;
+## get an EC object&#13;
+my $ec = new ElectricCommander();&#13;
+$ec-&gt;abortOnError(0);&#13;
+&#13;
+## load option list from procedure parameters&#13;
+my $x       = $ec-&gt;getJobDetails( $ENV{COMMANDER_JOBID} );&#13;
+my $nodeset = $x-&gt;find("//actualParameter");&#13;
+foreach my $node ( $nodeset-&gt;get_nodelist ) {&#13;
+    my $parm = $node-&gt;findvalue("actualParameterName");&#13;
+    my $val  = $node-&gt;findvalue("value");&#13;
+    $opts-&gt;{$parm} = "$val";&#13;
+}&#13;
+&#13;
+if ( !defined $opts-&gt;{config} || "$opts-&gt;{config}" eq "" ) {&#13;
+    print "config parameter must exist and be non-blank\n";&#13;
+    exit ERROR;&#13;
+}&#13;
+&#13;
+# check to see if a config with this name already exists before we do anything else&#13;
+my $xpath = $ec-&gt;getProperty("/myProject/helloworld_cfgs/$opts-&gt;{config}");&#13;
+my $property = $xpath-&gt;findvalue("//response/property/propertyName");&#13;
+&#13;
+if ( defined $property &amp;&amp; "$property" ne "" ) {&#13;
+    my $errMsg = "A configuration named '$opts-&gt;{config}' already exists.";&#13;
+    $ec-&gt;setProperty( "/myJob/configError", $errMsg );&#13;
+    print $errMsg;&#13;
+    exit ERROR;&#13;
+}&#13;
+&#13;
+my $cfg =&#13;
+  new ElectricCommander::PropDB( $ec, "/myProject/helloworld_cfgs" );&#13;
+  &#13;
+# add all the options as properties&#13;
+foreach my $key ( keys %{$opts} ) {&#13;
+    &#13;
+    if ( "$key" eq "config" ) {&#13;
+        next;&#13;
+    }&#13;
+	&#13;
+    $cfg-&gt;setCol( "$opts-&gt;{config}", "$key", "$opts-&gt;{$key}" );&#13;
+}&#13;
+exit SUCCESS;&#13;
+</command>
+                <condition/>
+                <description>Create a HelloWorld configuration</description>
+                <errorHandling>failProcedure</errorHandling>
+                <exclusiveMode>none</exclusiveMode>
+                <logFileName/>
+                <parallel>0</parallel>
+                <releaseMode>none</releaseMode>
+                <resourceName/>
+                <shell>ec-perl</shell>
+                <timeLimit>5</timeLimit>
+                <timeLimitUnits>minutes</timeLimitUnits>
+                <workingDirectory/>
+                <workspaceName/>
+                <procedureName>CreateConfiguration</procedureName>
+                <projectName>EC-HelloWorld-1.0.0.0</projectName>
+                <propertySheet>
+                    <property>
+                        <propertyName>ec_customEditorData</propertyName>
+                        <propertySheet>
+                            <property>
+                                <propertyName>formType</propertyName>
+                                <expandable>1</expandable>
+                                <value>command</value>
+                            </property>
+                        </propertySheet>
+                    </property>
+                </propertySheet>
+            </step>
+        </procedure>
+        <procedure>
+            <procedureName>DeleteConfiguration</procedureName>
+            <description>Delete an EC-HelloWorld configuration.</description>
+            <jobNameTemplate>EC-HelloWorld-DeleteConfiguration-$[jobId]</jobNameTemplate>
+            <resourceName/>
+            <workspaceName/>
+            <propertySheet>
+                <property>
+                    <propertyName>ec_customEditorData</propertyName>
+                    <propertySheet>
+                        <property>
+                            <propertyName>parameters</propertyName>
+                            <propertySheet>
+                                <property>
+                                    <propertyName>config</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                            </propertySheet>
+                        </property>
+                    </propertySheet>
+                </property>
+                <property>
+                    <propertyName>ec_parameterForm</propertyName>
+                    <description/>
+                    <expandable>0</expandable>
+                    <value/>
+                </property>
+            </propertySheet>
+            <formalParameter>
+                <formalParameterName>config</formalParameterName>
+                <defaultValue/>
+                <description>Configuration Name.</description>
+                <expansionDeferred>0</expansionDeferred>
+                <required>1</required>
+                <type>entry</type>
+            </formalParameter>
+            <step>
+                <stepName>DeleteConfiguration</stepName>
+                <alwaysRun>0</alwaysRun>
+                <broadcast>0</broadcast>
+                <command>#&#13;
+#  Copyright 2015 Electric Cloud, Inc.&#13;
+#&#13;
+#  Licensed under the Apache License, Version 2.0 (the "License");&#13;
+#  you may not use this file except in compliance with the License.&#13;
+#  You may obtain a copy of the License at&#13;
+#&#13;
+#      http://www.apache.org/licenses/LICENSE-2.0&#13;
+#&#13;
+#  Unless required by applicable law or agreed to in writing, software&#13;
+#  distributed under the License is distributed on an "AS IS" BASIS,&#13;
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#13;
+#  See the License for the specific language governing permissions and&#13;
+#  limitations under the License.&#13;
+#&#13;
+&#13;
+##########################&#13;
+# deletecfg.pl&#13;
+##########################&#13;
+&#13;
+use ElectricCommander;&#13;
+use ElectricCommander::PropDB;&#13;
+&#13;
+use constant {&#13;
+    SUCCESS =&gt; 0,&#13;
+    ERROR   =&gt; 1,&#13;
+};&#13;
+&#13;
+my $opts;&#13;
+&#13;
+my $PLUGIN_NAME = "EC-HelloWorld";&#13;
+my $projName    = "EC-HelloWorld-1.0.0.0";&#13;
+&#13;
+if ( !defined $PLUGIN_NAME ) {&#13;
+    print "PLUGIN_NAME must be defined\n";&#13;
+    exit ERROR;&#13;
+}&#13;
+&#13;
+## get an EC object&#13;
+my $ec = new ElectricCommander();&#13;
+$ec-&gt;abortOnError(0);&#13;
+&#13;
+my $opts;&#13;
+$opts-&gt;{config} = "$[config]";&#13;
+&#13;
+if ( !defined $opts-&gt;{config} || "$opts-&gt;{config}" eq "" ) {&#13;
+    print "config parameter must exist and be non-blank\n";&#13;
+    exit ERROR;&#13;
+}&#13;
+&#13;
+# check to see if a config with this name already exists before we do anything else&#13;
+my $xpath = $ec-&gt;getProperty("/myProject/helloworld_cfgs/$opts-&gt;{config}");&#13;
+my $property = $xpath-&gt;findvalue("//response/property/propertyName");&#13;
+&#13;
+if ( !defined $property || "$property" eq "" ) {&#13;
+    my $errMsg =&#13;
+      "Error: A configuration named '$opts-&gt;{config}' does not exist.";&#13;
+    $ec-&gt;setProperty( "/myJob/configError", $errMsg );&#13;
+    print $errMsg;&#13;
+    exit ERROR;&#13;
+}&#13;
+&#13;
+$ec-&gt;deleteProperty("/myProject/helloworld_cfgs/$opts-&gt;{config}");&#13;
+$ec-&gt;deleteCredential( $projName, $opts-&gt;{config} );&#13;
+exit SUCCESS;&#13;
+</command>
+                <condition/>
+                <description>Delete an HelloWorld configuration</description>
+                <errorHandling>failProcedure</errorHandling>
+                <exclusiveMode>none</exclusiveMode>
+                <logFileName/>
+                <parallel>0</parallel>
+                <releaseMode>none</releaseMode>
+                <resourceName/>
+                <shell>ec-perl</shell>
+                <timeLimit>5</timeLimit>
+                <timeLimitUnits>minutes</timeLimitUnits>
+                <workingDirectory/>
+                <workspaceName/>
+                <propertySheet>
+                    <property>
+                        <propertyName>ec_customEditorData</propertyName>
+                        <propertySheet>
+                            <property>
+                                <propertyName>formType</propertyName>
+                                <expandable>1</expandable>
+                                <value>command</value>
+                            </property>
+                        </propertySheet>
+                    </property>
+                </propertySheet>
+            </step>
+        </procedure>
+        <procedure>
+            <procedureName>SayHello</procedureName>
+            <description>Prints Hello world</description>
+            <jobNameTemplate>EC-HelloWorld-SayHello-$[jobId]</jobNameTemplate>
+            <resourceName/>
+            <workspaceName/>
+            <propertySheet>
+                <property>
+                    <propertyName>ec_customEditorData</propertyName>
+                    <propertySheet>
+                        <property>
+                            <propertyName>parameters</propertyName>
+                            <propertySheet>
+                                <property>
+                                    <propertyName>connection_config</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>security_groups</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>keyPairName</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>server_name</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>image</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>flavor</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>quantity</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>availability_zone</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>customization_script</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>location</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>tag</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>resource_zone</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>								
+                                <property>
+                                    <propertyName>resource_check</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>checkedValue</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>1</value>
+                                        </property>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                        <property>
+                                            <propertyName>initiallyChecked</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>0</value>
+                                        </property>
+                                        <property>
+                                            <propertyName>uncheckedValue</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>0</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+
+
+                                <property>
+                                    <propertyName>associate_ip</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>checkedValue</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>1</value>
+                                        </property>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                        <property>
+                                            <propertyName>initiallyChecked</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>0</value>
+                                        </property>
+                                        <property>
+                                            <propertyName>uncheckedValue</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>0</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+
+                                <property>
+                                    <propertyName>resource_pool</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                                <property>
+                                    <propertyName>resource_workspace</propertyName>
+                                    <propertySheet>
+                                        <property>
+                                            <propertyName>formType</propertyName>
+                                            <expandable>1</expandable>
+                                            <value>standard</value>
+                                        </property>
+                                    </propertySheet>
+                                </property>
+                            </propertySheet>
+                        </property>
+                    </propertySheet>
+                </property>
+                <property>
+                    <propertyName>ec_parameterForm</propertyName>
+                    <description/>
+                    <expandable>0</expandable>
+                    <value>&lt;!--&#13;
+&#13;
+     Copyright 2015 Electric Cloud, Inc.&#13;
+&#13;
+     Licensed under the Apache License, Version 2.0 (the "License");&#13;
+     you may not use this file except in compliance with the License.&#13;
+     You may obtain a copy of the License at&#13;
+&#13;
+         http://www.apache.org/licenses/LICENSE-2.0&#13;
+&#13;
+     Unless required by applicable law or agreed to in writing, software&#13;
+     distributed under the License is distributed on an "AS IS" BASIS,&#13;
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#13;
+     See the License for the specific language governing permissions and&#13;
+     limitations under the License.&#13;
+&#13;
+--&gt;&#13;
+&lt;editor&gt;&#13;
+    &lt;help&gt;/commander/pages/EC-HelloWorld-1.0.0.0/EC-HelloWorld_help?s=Administration&amp;amp;ss=Plugins#SayHello&lt;/help&gt;&#13;
+    &lt;formElement&gt;&#13;
+        &lt;label&gt;Configuration:&lt;/label&gt;&#13;
+        &lt;property&gt;config&lt;/property&gt;&#13;
+        &lt;value/&gt;&#13;
+        &lt;documentation&gt;The name of the configuration to use for saying hello.&lt;/documentation&gt;&#13;
+        &lt;required&gt;0&lt;/required&gt;&#13;
+        &lt;type&gt;entry&lt;/type&gt;&#13;
+    &lt;/formElement&gt;&#13;
+&lt;/editor&gt;&#13;
+</value>
+                </property>
+            </propertySheet>
+            <formalParameter>
+                <formalParameterName>config</formalParameterName>
+                <required>0</required>
+                <type>entry</type>
+            </formalParameter>
+            <step>
+                <stepName>sayHello</stepName>
+                <alwaysRun>0</alwaysRun>
+                <broadcast>0</broadcast>
+                <command>#&#13;
+#  Copyright 2015 Electric Cloud, Inc.&#13;
+#&#13;
+#  Licensed under the Apache License, Version 2.0 (the "License");&#13;
+#  you may not use this file except in compliance with the License.&#13;
+#  You may obtain a copy of the License at&#13;
+#&#13;
+#      http://www.apache.org/licenses/LICENSE-2.0&#13;
+#&#13;
+#  Unless required by applicable law or agreed to in writing, software&#13;
+#  distributed under the License is distributed on an "AS IS" BASIS,&#13;
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#13;
+#  See the License for the specific language governing permissions and&#13;
+#  limitations under the License.&#13;
+#&#13;
+&#13;
+##########################&#13;
+# sayHello.pl&#13;
+##########################&#13;
+&#13;
+use warnings;&#13;
+use strict;&#13;
+use Encode;&#13;
+use utf8;&#13;
+use open IO =&gt; ':encoding(utf8)';&#13;
+use ElectricCommander;&#13;
+use ElectricCommander::PropDB;&#13;
+use Switch;&#13;
+&#13;
+$| = 1;&#13;
+&#13;
+# The configuration parameter&#13;
+my $configName = q{$[config]};&#13;
+&#13;
+# Create ElectricCommander instance&#13;
+my $ec = new ElectricCommander();&#13;
+$ec-&gt;abortOnError(0);&#13;
+&#13;
+my $formalLevel;&#13;
+# Get the configuration values if the configuration name was specified&#13;
+my $cfg  = new ElectricCommander::PropDB( $ec, "/myProject/helloworld_cfgs");&#13;
+if ($configName) {&#13;
+    my %configValues = $cfg-&gt;getRow($configName);&#13;
+&#13;
+    # Check if configuration exists&#13;
+    unless ( keys(%configValues) ) {&#13;
+        my $err = "Configuration '[$configName]' does not exist. Leave the 'Configuration' empty if you haven't created a configuration yet.\n";&#13;
+        $ec-&gt;setProperty("summary", $err);&#13;
+        print $err;&#13;
+        exit 1;&#13;
+    }&#13;
+&#13;
+    #Get the formality level that was saved in the configuration.&#13;
+    $formalLevel = $configValues{'formalLevel'};&#13;
+}&#13;
+&#13;
+my $msg = 'Welcome to Electric Cloud, You are now immersed into Plugin Development!';&#13;
+# Change the message based on the formal level selected&#13;
+switch ($formalLevel){&#13;
+   case("Informal") { $msg = "Hello World!"; }&#13;
+   case("Surfer") { $msg = "Yo, World!"; }&#13;
+   case("Almost Formal") { $msg = "Greetings World!"; }&#13;
+}&#13;
+&#13;
+# Set the message in the job summary as well as print it in the step logs.&#13;
+$ec-&gt;setProperty("summary", $msg . "\n");&#13;
+print $msg;&#13;
+&#13;
+exit(0);&#13;
+</command>
+                <condition/>
+                <description/>
+                <errorHandling>failProcedure</errorHandling>
+                <exclusiveMode>none</exclusiveMode>
+                <logFileName/>
+                <parallel>0</parallel>
+                <releaseMode>none</releaseMode>
+                <resourceName/>
+                <shell>ec-perl</shell>
+                <timeLimit/>
+                <timeLimitUnits>minutes</timeLimitUnits>
+                <workingDirectory/>
+                <workspaceName/>
+                <propertySheet>
+                    <property>
+                        <propertyName>ec_customEditorData</propertyName>
+                        <propertySheet>
+                            <property>
+                                <propertyName>formType</propertyName>
+                                <expandable>1</expandable>
+                                <value>command</value>
+                            </property>
+                        </propertySheet>
+                    </property>
+                </propertySheet>
+            </step>
+        </procedure>
+    </project>
+</exportedData>
